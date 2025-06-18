@@ -25,12 +25,16 @@ public class CubosManager : MonoBehaviour
         //    {
         //        cubos[i].transform.position = new Vector3(0, 0, 0);
         //    }
-    }
 
-    // Posicionar los cubos en "Escalerita" 
+
+        // Posicionar los cubos en "Escalerita" 
 
         int desplazo = 0;
         for (int i = 0; i < CubeScript.Length; i++)
+        {
+
+        }
+    }
 
     // Update is called once per frame
     void Update()
