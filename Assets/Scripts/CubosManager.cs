@@ -9,7 +9,14 @@ public class CubosManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        cubos = FindObjectsOfType<CubeScript>();
+        for (int i = 0; i < cubos.Length; i++)
+        {
+            if (!cubos[i].isPersistent)
+            {
+                Destroy(cubos[i].gameObject);
+            }
+        }
     }
 
     // Update is called once per frame
