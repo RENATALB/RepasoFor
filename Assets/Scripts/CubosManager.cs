@@ -30,9 +30,10 @@ public class CubosManager : MonoBehaviour
         // Posicionar los cubos en "Escalerita" 
 
         int desplazo = 0;
-        for (int i = 0; i < CubeScript.Length; i++)
+        for (int i = 0; i < cubos.Length; i++)
         {
-
+            cubos[i].transform.position = new Vector3(desplazo, desplazo, 0);
+            desplazo = desplazo + 1;
         }
     }
 
