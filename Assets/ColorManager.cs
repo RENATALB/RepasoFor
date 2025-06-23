@@ -11,13 +11,13 @@ public class ColorManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        randomColorIndex = Random.Range(0, colors.Length);
-        cubeRenderer.material.color = colors[randomColorIndex];
+        InvokeRepeating(nameof(SetRandomColor), 0,2.5f);
     }
 
     // Update is called once per frame
-    void Update()
+    void SetRandomColor()
     {
-        
+        randomColorIndex = Random.Range(0, colors.Length);
+        cubeRenderer.material.color = colors[randomColorIndex];
     }
 }

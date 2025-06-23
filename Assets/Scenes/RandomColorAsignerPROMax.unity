@@ -399,7 +399,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   colors:
   - {r: 1, g: 0, b: 0, a: 0}
-  - {r: 0, g: 0, b: 1, a: 0}
+  - {r: 1, g: 0.53333336, b: 0, a: 0}
+  - {r: 1, g: 1, b: 0, a: 0}
   - {r: 0, g: 1, b: 0, a: 0}
+  - {r: 0, g: 1, b: 1, a: 0}
+  - {r: 0, g: 0, b: 1, a: 0}
   cubeRenderer: {fileID: 1509627269}
   randomColorIndex: 0
